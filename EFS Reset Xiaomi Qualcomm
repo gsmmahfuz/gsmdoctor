@@ -1,0 +1,19 @@
+adb shell 
+
+ls -l /dev/block/bootdevice/by-name/
+
+dd if=/dev/zero of=/dev/block/mmcblk0p46
+
+dd if=/dev/zero of=/dev/block/mmcblk0p47
+
+dd if=/dev/zero of=/dev/block/mmcblk0p45
+
+dd if=/dev/zero of=/dev/block/bootdevice/by-name/modemst1
+
+dd if=/dev/zero of=/dev/block/bootdevice/by-name/modemst2
+
+dd if=/dev/zero of=/dev/block/bootdevice/by-name/fsg
+
+dd if=/dev/zero of=/dev/block/bootdevice/by-name/fsc
+
+reboot
